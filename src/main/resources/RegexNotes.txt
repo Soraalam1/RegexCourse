@@ -1,0 +1,16 @@
+Regex:
+
+Meta characters:
+<([{\^-=$!|}])?*+.>
+
+\ allows you to escape these meta characters if you want the literal.
+
+\Q and \E turns all enclosed meta characters into literals
+
+. is a wild card that means any character, except for end of line characters,
+there is a way we'll figure out to fix that. (dot all)
+
+Java methods:
+
+matches() returns a boolean true if the string matches the input
+
